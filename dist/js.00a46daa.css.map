@@ -1,0 +1,1 @@
+{"version":3,"sources":["scss/main.scss","scss/_variables.scss"],"names":[],"mappings":"AAEA,IAAI,CAAC;EACD,UAAU,ECHL,OAAO,GDIf","file":"js.00a46daa.css","sourceRoot":"../src","sourcesContent":["@import \"variables\";\n\nbody {\n    background: $color1;\n}","$color1: #4b21ff;"]}
