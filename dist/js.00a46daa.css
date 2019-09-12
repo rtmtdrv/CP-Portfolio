@@ -28,6 +28,25 @@
   background: white;
   width: 65%;
   height: 100%; }
+  .home .content-area .img-container {
+    width: 30%;
+    display: inline-block;
+    position: relative;
+    height: 100%; }
+    .home .content-area .img-container .user-img {
+      top: 56px;
+      position: absolute;
+      left: -250px;
+      width: 500px;
+      height: calc(100% - 112px);
+      background: url("https://mediaslide-europe.storage.googleapis.com/named/pictures/279/1663/profile-1530193970-e8886fbd48fd79794127c8636f6cd804.jpg") no-repeat center center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover; }
+  .home .content-area .profile-section {
+    display: inline-block;
+    vertical-align: top; }
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -76,7 +95,11 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-html, body {
+* {
+  box-sizing: border-box; }
+
+html,
+body {
   font-size: 18px;
   background: #4b21ff;
   font-family: 'Barlow Semi Condensed', sans-serif;

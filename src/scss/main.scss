@@ -2,7 +2,12 @@
 @import "home";
 @import "reset";
 
-html, body {
+* {
+ box-sizing: border-box;
+}
+
+html, 
+body {
     font-size: 18px;
     background: $color1;
     font-family: 'Barlow Semi Condensed', sans-serif;
