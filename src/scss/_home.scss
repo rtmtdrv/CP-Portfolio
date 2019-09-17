@@ -1,8 +1,14 @@
 .home {
     .logo {
-        background: white;
-        height: 100px;
-        width: 200px;
+        border: 5px solid white;
+        height: 130px;
+        width: 150px;
+        display: flex;
+        color: white;
+        justify-content: center;
+        align-items: center;
+        font-size: 2rem;
+        line-height: 0;
     }
 
     .info-section {
@@ -30,6 +36,17 @@
                 margin: 0.2rem 0 1.5rem;
 
             }
+            .icon-section {
+                a {
+                    color: white;
+                    text-decoration: none;
+                    font-size: 1.5rem;
+                    padding: 0 10px;
+                    &:first-child {
+                        padding: 0 10px 0 0;
+                    }
+                }
+            }
         }
     }
 
@@ -44,6 +61,7 @@
             display: inline-block;
             position: relative;
             height: 100%;
+            margin-bottom: -5px;
 
             .user-img {
                 top: 56px;
@@ -62,6 +80,33 @@
         .profile-section {
             display: inline-block;
             vertical-align: top;
+            max-width: 500px;
+            padding: 20% 0 0;
+
+            .profile {
+                h1 {
+                    font-size: 2.3rem;
+                    font-weight:  500;
+                    line-height: 1.2;
+                    margin: 0 0 1rem;
+
+                    span {
+                        color: $color1;
+                    }
+                }
+
+                h5 {
+                    font-size: 1.1rem;
+                    margin: 0 0 2rem;
+                }
+
+                p {
+                    color: $color5;
+                    font-weight: 300;
+                    line-height: 1.4;
+                    margin: 0 0 2rem;
+                }
+            }
         }
     }
 }
