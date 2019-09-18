@@ -42,6 +42,9 @@
                     text-decoration: none;
                     font-size: 1.5rem;
                     padding: 0 10px;
+                    &:hover {
+                        color: $hoverColor;
+                    }
                     &:first-child {
                         padding: 0 10px 0 0;
                     }
@@ -52,7 +55,7 @@
 
     .content-area {
         margin-left: 35%;
-        background: white;
+        background: $color3;
         width: 65%;
         height: 100%;
 
@@ -74,6 +77,9 @@
                 -moz-background-size: cover;
                 -o-background-size: cover;
                 background-size: cover;
+                -webkit-box-shadow: 9px 20px 74px 6px rgba(0,0,0,0.34);
+                -moz-box-shadow: 9px 20px 74px 6px rgba(0,0,0,0.34);
+                box-shadow: 9px 20px 74px 6px rgba(0,0,0,0.34);
             }
         }
 
