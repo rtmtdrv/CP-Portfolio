@@ -5,11 +5,11 @@
   "main": "index.js",
   "scripts": {
     "watch": "parcel src/index.html",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist src"
   },
   "author": "",
   "license": "ISC",
-  "homepage": "https://rtmtdrv.github.io/cp-port",
+  "homepage": "https://rtmtdrv.github.io/CP-Portfolio",
   "dependencies": {
     "gh-pages": "^2.1.1",
     "node-sass": "^4.12.0"
