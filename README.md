@@ -4,10 +4,10 @@ Portfolio website with a home page, resume page and projects.
 
 <b>Utilizing:</b>
 
-• Parcel.js
-• CSS Animations
-• Sass
-• Responsive Layout
-• Fontawesome
-• Google fonts
-• JavaScript
+• Parcel.js<br>
+• CSS Animations<br>
+• Sass<br>
+• Responsive Layout<br>
+• Fontawesome Icons<br>
+• Google fonts<br>
+• JavaScript<br>

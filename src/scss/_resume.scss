@@ -1,9 +1,60 @@
 .resume {
+    .info-section {
+        // width: 20%;
+    }
     .content-area {
-        margin-left: 30%;
+        margin-left: 20%;
         background: $color3;
         width: 80%;
         min-width: 300px;
         height: 100%;
+        overflow: hidden;
+
+        .category {
+            margin-bottom: 56px;
+
+            h1 {
+                text-transform: uppercase;
+                font-weight: 700;
+                font-size: 2rem;
+                letter-spacing: 3px;
+                margin-bottom: 56px;
+            }
+    
+            h5 {
+                text-transform: uppercase;
+                font-weight: 500;
+                font-size: 1.2rem;
+                letter-spacing: 1px;
+                margin-bottom: 30px;
+            }
+    
+            p {
+                font-weight: 300;
+                font-size: 1rem;
+                // margin-bottom: 1rem;
+            }
+    
+            .xp-section {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-column-gap: 56px;
+                grid-row-gap: 30px;
+                max-width: 1000px; 
+                
+    
+                .xp-box {
+                    padding: 20px;
+                    transition: all .5s ease-in-out;
+                    cursor: pointer;
+                    
+                    &:hover{
+                        -webkit-box-shadow: 0px 0px 60px 6px rgba(0,0,0,0.12);
+                        -moz-box-shadow: 0px 0px 60px 6px rgba(0,0,0,0.12);
+                        box-shadow: 0px 0px 60px 6px rgba(0,0,0,0.12);
+                    }
+                }
+            }
+        }
     }
 }
