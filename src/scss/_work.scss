@@ -55,9 +55,10 @@
                     height: 400px;
                     
                     &:hover{
-                        -webkit-box-shadow: 0px 0px 60px 6px rgba(0,0,0,0.12);
-                        -moz-box-shadow: 0px 0px 60px 6px rgba(0,0,0,0.12);
-                        box-shadow: 0px 0px 60px 6px rgba(0,0,0,0.12);
+                        -webkit-box-shadow: 0px 0px 30px 6px rgba(0,0,0,0.1);
+                        -moz-box-shadow: 0px 0px 30px 6px rgba(0,0,0,0.1);
+                        box-shadow: 0px 0px 30px 6px rgba(0,0,0,0.1);
+                        z-index: 10;
                     }
 
                     .grey-bg {
@@ -69,14 +70,55 @@
                         left: 0;
                         opacity: 0;
                         transition: all .3s ease-in-out;
+                        overflow: hidden;
 
                         &:hover {
                             opacity: 0.9;
+
+                            .project-info {
+                                .project-details {
+                                    opacity: 1;
+                                    transform: translate3d(0, 0, 0);
+                                }
+                                .project-title {
+                                    opacity: 1;
+                                    transform: translate3d(0, 0, 0);
+                                }
+                            }
                         }
 
                         .project-info {
+                            padding: 56px;
                             position: absolute;
+                            width: 100%;
                             bottom: 0;
+
+                            .project-details {
+                                position: relative;
+                                font-size: 1.1rem;
+                                text-transform: capitalize;
+                                margin: 0 0 1rem 0;
+                                transform: translate3d(-200px, 0, 0);
+                                opacity: 0;
+                                transition: all .3s ease-in;
+                            }
+
+                            .project-title {
+                                font-size: 1.8rem;
+                                text-transform: uppercase;
+                                font-weight: 700;
+                                transform: translate3d(-100px, 0, 0);
+                                opacity: 0;
+                                transition: all .3s ease-in .1s;
+
+                            }
+                            .fa-long-arrow-right {
+                                position: absolute;
+                                bottom: 0;
+                                right: 56px;
+                                bottom: 56px;
+                                font-size: 3rem;
+                            }
                         }
                     }
                 }
