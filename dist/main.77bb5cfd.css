@@ -99,6 +99,17 @@
       line-height: 1.4;
       margin: 0 0 2rem; }
 
+@media (max-width: 767px) {
+  .home .content-area .img-container {
+    padding: 56px 20px 0; }
+    .home .content-area .img-container .user-img {
+      position: static;
+      width: 100%; }
+  .home .content-area .profile-section {
+    width: 70%;
+    float: right;
+    padding: 20% 20px 0; } }
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)

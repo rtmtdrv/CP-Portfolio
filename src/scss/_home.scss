@@ -79,3 +79,34 @@
         }
     }
 }
+
+//phone
+@media (max-width: 767px) { 
+    .home {
+        .content-area {
+            .img-container {
+                padding: 56px 20px 0;
+                .user-img {
+                    position: static;
+                    width: 100%;
+                }
+            }
+            .profile-section {
+                width: 70%;
+                float: right;
+                padding: 20% 20px 0;
+            }
+        }
+    } 
+}
+//tablet
+@media (min-width: 768px) {
+
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+@media (min-width: 1200px) and (max-width: 1368px) {
+
+}
