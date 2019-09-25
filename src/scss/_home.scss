@@ -83,7 +83,35 @@
 //phone
 @media (max-width: 767px) { 
     .home {
+        .menu-icon {
+            top: -3px;
+            right: 20px;
+            color: white;
+            .fa {
+                color: white;
+            }
+        }
+        .info-section {
+            // display: none;
+            position: static;
+            padding: 10px 20px;
+
+            .logo {
+                height: 50px;
+                width: 70px;
+                font-size: 1rem;
+                border: 2px solid white;
+            }
+
+            .info-box {
+                display: none;
+            }
+        }
+
         .content-area {
+            margin-left: 0;
+            width: 100%;
+
             .img-container {
                 padding: 56px 20px 0;
                 .user-img {
@@ -100,8 +128,24 @@
     } 
 }
 //tablet
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 991px) {
+    .home {
+        .content-area {
+            .img-container {
+                padding: 56px 20px 0;
 
+                .user-img {
+                    position: static;
+                    width: 100%;
+                }
+            }
+            .profile-section {
+                width: 70%;
+                float: right;
+                padding: 20% 20px 0;
+            }
+        }
+    }
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {

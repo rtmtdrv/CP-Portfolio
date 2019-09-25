@@ -100,6 +100,36 @@
       margin: 0 0 2rem; }
 
 @media (max-width: 767px) {
+  .home .menu-icon {
+    top: -3px;
+    right: 20px;
+    color: white; }
+    .home .menu-icon .fa {
+      color: white; }
+  .home .info-section {
+    position: static;
+    padding: 10px 20px; }
+    .home .info-section .logo {
+      height: 50px;
+      width: 70px;
+      font-size: 1rem;
+      border: 2px solid white; }
+    .home .info-section .info-box {
+      display: none; }
+  .home .content-area {
+    margin-left: 0;
+    width: 100%; }
+    .home .content-area .img-container {
+      padding: 56px 20px 0; }
+      .home .content-area .img-container .user-img {
+        position: static;
+        width: 100%; }
+    .home .content-area .profile-section {
+      width: 70%;
+      float: right;
+      padding: 20% 20px 0; } }
+
+@media (min-width: 768px) and (max-width: 991px) {
   .home .content-area .img-container {
     padding: 56px 20px 0; }
     .home .content-area .img-container .user-img {
