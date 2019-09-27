@@ -150,10 +150,44 @@
 
 //laptop
 @media (min-width: 992px) and (max-width: 1199px) {
+    .home {
+        .content-area {
+            .img-container {
+                padding: 56px 20px 0;
+                float: left;
 
+                .user-img {
+                    position: static;
+                    width: 100%;
+                }
+            }
+            .profile-section {
+                width: 70%;
+                float: left;
+                padding: 20% 20px 0;
+            }
+        }
+    }
+}
 
 //extra big
-}
-@media (min-width: 1200px) and (max-width: 1368px) {
+@media (min-width: 1200px) {
+    .home {
+        .content-area {
+            .img-container {
+                padding: 56px 20px 0;
+                float: left;
 
+                .user-img {
+                    // position: static;
+                    // width: 100%;
+                }
+            }
+            .profile-section {
+                width: 70%;
+                float: left;
+                // padding: 20% 20px 0;
+            }
+        }
+    }
 }
