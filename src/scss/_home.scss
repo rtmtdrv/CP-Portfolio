@@ -87,12 +87,24 @@
             top: -3px;
             right: 20px;
             color: white;
+
             .fa {
                 color: white;
             }
         }
+
+        .content-area {
+            overflow: auto;
+            // height: auto;
+
+            &:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+        }
+        
         .info-section {
-            // display: none;
             position: static;
             padding: 10px 20px;
 
@@ -114,6 +126,7 @@
 
             .img-container {
                 padding: 56px 20px 0;
+
                 .user-img {
                     position: static;
                     width: 100%;
@@ -123,14 +136,17 @@
                 width: 70%;
                 float: right;
                 padding: 20% 20px 0;
+
             }
         }
     } 
 }
+
 //tablet
 @media (min-width: 768px) and (max-width: 991px) {
     .home {
         .content-area {
+            
             .img-container {
                 padding: 56px 20px 0;
 
@@ -164,7 +180,8 @@
             .profile-section {
                 width: 70%;
                 float: left;
-                padding: 20% 20px 0;
+                padding: 20% 60px 0;
+                max-width: 800px;
             }
         }
     }
@@ -186,7 +203,8 @@
             .profile-section {
                 width: 70%;
                 float: left;
-                // padding: 20% 20px 0;
+                max-width: 800px;
+                padding: 20% 60px 0;
             }
         }
     }
