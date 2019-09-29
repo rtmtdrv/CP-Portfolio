@@ -582,48 +582,82 @@ body {
       .contact .content-area .img-container .form-section {
         position: static;
         width: 100%;
+        min-width: 00px;
         height: auto;
-        overflow: auto; }
+        overflow: auto;
+        margin: auto; }
     .contact .content-area .contact-section {
       width: 100%;
       float: left;
       padding: 20% 20px 0; } }
 
 @media (min-width: 768px) and (max-width: 991px) {
+  .contact .info-section .icon-section a {
+    font-size: 1.4rem; }
   .contact .content-area {
     height: auto; }
     .contact .content-area:after {
       content: "";
-      display: table; }
+      display: table;
+      clear: both; }
     .contact .content-area .img-container {
       width: 100%;
       padding: 56px 20px 0;
       height: auto; }
       .contact .content-area .img-container .form-section {
         position: static;
-        width: 100%; }
+        width: 100%;
+        height: auto;
+        overflow: auto; }
     .contact .content-area .contact-section {
       width: 70%;
       float: right;
       padding: 20% 20px 0; } }
 
 @media (min-width: 992px) and (max-width: 1199px) {
-  .contact .content-area .img-container {
-    padding: 56px 20px 0;
-    float: left; }
-    .contact .content-area .img-container .form-section {
-      position: static;
+  .contact .content-area {
+    height: auto; }
+    .contact .content-area:after {
+      content: "";
+      display: table;
+      clear: both; }
+    .contact .content-area .img-container {
+      padding: 56px 20px 0;
+      float: left;
+      height: auto;
       width: 100%; }
-  .contact .content-area .contact-section {
-    width: 70%;
-    float: left;
-    padding: 20% 60px 0;
-    max-width: 800px; } }
+      .contact .content-area .img-container .form-section {
+        position: static;
+        width: 100%;
+        float: left;
+        height: auto;
+        overflow: auto; }
+    .contact .content-area .contact-section {
+      width: 70%;
+      float: left;
+      padding: 20% 60px 0;
+      max-width: 800px; } }
 
 @media (min-width: 1200px) {
   .contact .content-area .img-container {
     padding: 56px 20px 0;
     float: left; }
+    .contact .content-area .img-container .form-section {
+      left: -157px;
+      width: 400; }
+  .contact .content-area .contact-section {
+    width: 70%;
+    float: left;
+    max-width: 800px;
+    padding: 20% 60px 0; } }
+
+@media (min-width: 1800px) {
+  .contact .content-area .img-container {
+    padding: 56px 20px 0;
+    float: left; }
+    .contact .content-area .img-container .form-section {
+      left: -250px;
+      width: 500; }
   .contact .content-area .contact-section {
     width: 70%;
     float: left;
