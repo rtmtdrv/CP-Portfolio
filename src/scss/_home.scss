@@ -93,16 +93,16 @@
             }
         }
 
-        .content-area {
-            overflow: auto;
-            // height: auto;
+        // .content-area {
+        //     overflow: auto;
+        //     height: auto;
 
-            &:after {
-                content: "";
-                display: table;
-                clear: both;
-            }
-        }
+        //     &:after {
+        //         content: "";
+        //         display: table;
+        //         clear: both;
+        //     }
+        // }
         
         .info-section {
             position: static;
@@ -123,6 +123,14 @@
         .content-area {
             margin-left: 0;
             width: 100%;
+            overflow: auto;
+            height: auto;
+
+            &:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
 
             .img-container {
                 padding: 56px 20px 0;
@@ -136,7 +144,6 @@
                 width: 70%;
                 float: right;
                 padding: 20% 20px 0;
-
             }
         }
     } 
@@ -146,7 +153,19 @@
 @media (min-width: 768px) and (max-width: 991px) {
     .home {
         .content-area {
-            
+            margin-left: 30%;
+            width: 70%;
+
+            .info-section {
+                width: 20%;
+                padding: 56px 30px;
+    
+                .icon-section {
+                    a {
+                        font-size: 1.4rem;
+                    }
+                }
+            } 
             .img-container {
                 padding: 56px 20px 0;
 
@@ -188,12 +207,30 @@
 }
 
 //extra big
-@media (min-width: 1200px) {
+@media (min-width: 1200px) and (max-width: 1500px){
     .home {
+        .info-section {
+            width: 20%;
+            padding: 56px 30px;
+            
+            .icon-section {
+                a {
+                    font-size: 1.4rem;
+                }
+            }
+        }
         .content-area {
+            width: 80%;
+            margin-left: 20%;
+
             .img-container {
                 padding: 56px 20px 0;
                 float: left;
+
+                .user-img {
+                    position: static;
+                    width: 100%;
+                }
             }
             .profile-section {
                 width: 70%;

@@ -251,12 +251,6 @@ body {
     color: white; }
     .home .menu-icon .fa {
       color: white; }
-  .home .content-area {
-    overflow: auto; }
-    .home .content-area:after {
-      content: "";
-      display: table;
-      clear: both; }
   .home .info-section {
     position: static;
     padding: 10px 20px; }
@@ -269,7 +263,13 @@ body {
       display: none; }
   .home .content-area {
     margin-left: 0;
-    width: 100%; }
+    width: 100%;
+    overflow: auto;
+    height: auto; }
+    .home .content-area:after {
+      content: "";
+      display: table;
+      clear: both; }
     .home .content-area .img-container {
       padding: 56px 20px 0; }
       .home .content-area .img-container .user-img {
@@ -281,15 +281,23 @@ body {
       padding: 20% 20px 0; } }
 
 @media (min-width: 768px) and (max-width: 991px) {
-  .home .content-area .img-container {
-    padding: 56px 20px 0; }
-    .home .content-area .img-container .user-img {
-      position: static;
-      width: 100%; }
-  .home .content-area .profile-section {
-    width: 70%;
-    float: right;
-    padding: 20% 20px 0; } }
+  .home .content-area {
+    margin-left: 30%;
+    width: 70%; }
+    .home .content-area .info-section {
+      width: 20%;
+      padding: 56px 30px; }
+      .home .content-area .info-section .icon-section a {
+        font-size: 1.4rem; }
+    .home .content-area .img-container {
+      padding: 56px 20px 0; }
+      .home .content-area .img-container .user-img {
+        position: static;
+        width: 100%; }
+    .home .content-area .profile-section {
+      width: 70%;
+      float: right;
+      padding: 20% 20px 0; } }
 
 @media (min-width: 992px) and (max-width: 1199px) {
   .home .content-area .img-container {
@@ -304,15 +312,26 @@ body {
     padding: 20% 60px 0;
     max-width: 800px; } }
 
-@media (min-width: 1200px) {
-  .home .content-area .img-container {
-    padding: 56px 20px 0;
-    float: left; }
-  .home .content-area .profile-section {
-    width: 70%;
-    float: left;
-    max-width: 800px;
-    padding: 20% 60px 0; } }
+@media (min-width: 1200px) and (max-width: 1500px) {
+  .home .info-section {
+    width: 20%;
+    padding: 56px 30px; }
+    .home .info-section .icon-section a {
+      font-size: 1.4rem; }
+  .home .content-area {
+    width: 80%;
+    margin-left: 20%; }
+    .home .content-area .img-container {
+      padding: 56px 20px 0;
+      float: left; }
+      .home .content-area .img-container .user-img {
+        position: static;
+        width: 100%; }
+    .home .content-area .profile-section {
+      width: 70%;
+      float: left;
+      max-width: 800px;
+      padding: 20% 60px 0; } }
 
 .resume .content-area {
   margin-left: 20%;
@@ -382,7 +401,7 @@ body {
         grid-template-columns: 1fr; }
   .resume .info-section {
     position: static;
-    padding: 10px 20px; }
+    padding: 10px 30px; }
     .resume .info-section .logo {
       height: 50px;
       width: 70px;
@@ -396,24 +415,42 @@ body {
 
 @media (min-width: 768px) and (max-width: 991px) {
   .resume .info-section {
+    width: 30%;
+    padding: 56px 30px; }
+    .resume .info-section .icon-section a {
+      font-size: 1.4rem; }
+  .resume .content-area {
+    height: auto;
+    width: 70%;
+    margin-left: 30%; }
+    .resume .content-area:after {
+      content: "";
+      display: table;
+      clear: both; }
+    .resume .content-area .category {
+      width: 100%; }
+      .resume .content-area .category .xp-section {
+        grid-template-columns: 1fr; } }
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .resume .info-section {
     width: 30%; }
     .resume .info-section .icon-section a {
       font-size: 1.4rem; }
   .resume .content-area {
     height: auto;
-    width: 70%; }
+    width: 70%;
+    margin-left: 30%; }
     .resume .content-area:after {
       content: "";
       display: table;
       clear: both; } }
 
-@media (min-width: 992px) and (max-width: 1199px) {
-  .resume .content-area {
-    height: auto; }
-    .resume .content-area:after {
-      content: "";
-      display: table;
-      clear: both; } }
+@media (min-width: 1200px) {
+  .resume .info-section {
+    width: 30%; }
+    .resume .info-section .icon-section a {
+      font-size: 1.4rem; } }
 
 .work .info-section {
   width: 20%; }
