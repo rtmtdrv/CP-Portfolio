@@ -354,6 +354,67 @@ body {
           -moz-box-shadow: 0px 0px 60px 6px rgba(0, 0, 0, 0.12);
           box-shadow: 0px 0px 60px 6px rgba(0, 0, 0, 0.12); }
 
+@media (min-width: 0px) and (max-width: 767px) {
+  body,
+  html {
+    height: auto; }
+  .resume .menu-icon {
+    top: -3px;
+    right: 20px;
+    color: white; }
+    .resume .menu-icon .fa {
+      color: white; }
+  .resume .content-area {
+    overflow: auto;
+    height: auto; }
+    .resume .content-area:after {
+      content: "";
+      display: table;
+      clear: both; }
+    .resume .content-area .scroll-section {
+      padding: 50px 20px;
+      width: 100%;
+      height: auto;
+      overflow: auto; }
+    .resume .content-area .category {
+      width: 100%; }
+      .resume .content-area .category .xp-section {
+        grid-template-columns: 1fr; }
+  .resume .info-section {
+    position: static;
+    padding: 10px 20px; }
+    .resume .info-section .logo {
+      height: 50px;
+      width: 70px;
+      font-size: 1rem;
+      border: 2px solid white; }
+    .resume .info-section .info-box {
+      display: none; }
+  .resume .content-area {
+    margin-left: 0;
+    width: 100%; } }
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .resume .info-section {
+    width: 30%; }
+    .resume .info-section .icon-section a {
+      font-size: 1.4rem; }
+  .resume .content-area {
+    height: auto;
+    width: 70%; }
+    .resume .content-area:after {
+      content: "";
+      display: table;
+      clear: both; } }
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .resume .content-area {
+    height: auto; }
+    .resume .content-area:after {
+      content: "";
+      display: table;
+      clear: both; } }
+
 .work .info-section {
   width: 20%; }
 
